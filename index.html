@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        border-top: 1px solid black;
+        padding: 10px;
+    }
+    /* ejercicio degradados */
+    .grad1{
+        width: 80%;
+        height: 200px;
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, purple, fuchsia);
+        margin: auto;
+        color: gray;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    /* ejercicios fontAwesome */
+    .mainContainerFonts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerFonts{
+        max-width: 60%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .fonts{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+    i{
+        margin-top: 10px;
+    }
+    /* ejercicios formularios */
+    .mainContainerForm{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mainForm{
+        width: 80%;
+        background-color: rgb(230, 223, 215);
+    }
+    .containerForm{
+        padding: 0 20px;
+    }
+    .inputClass input{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(128, 128, 128);
+        width: 99%;
+    }
+    .inputClass select{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(128, 128, 128);
+        width: 100%;
+    }
+</style>
+<body>
+        <h1>EJERCICIOS CSS 4</h1>
+        <!-- ejercicio degradados -->
+    <section>
+        <h2>DEGRADADOS</h2>
+        <div class="grad1">RAINBOW BACKGROUND</div>
+    </section>
+    <!-- ejercicio ICONOS -->
+    <section class="mainContainerFonts">
+        <h2>ICONOS</h2>
+        <div class="containerFonts">
+        <div class="fonts">
+            <i class="fa-regular fa-user fa-10x"></i>
+            <i class="fa-regular">profile</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-regular fa-envelope fa-10x"></i>
+            <i class="fa-regular">email</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-solid fa-gear fa-10x"></i>
+            <i class="fa-regular">configuracion</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-regular fa-calendar fa-10x"></i>
+            <i class="fa-regular">calendar</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-solid fa-lock fa-10x"></i>
+            <i class="fa-regular">lock</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-solid fa-arrow-up-from-bracket fa-10x"></i>
+            <i class="fa-regular">compartir</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-solid fa-pen-to-square fa-10x"></i>
+            <i class="fa-regular">edit</i>
+        </div>
+        <div class="fonts">
+            <i class="fa-solid fa-link fa-10x"></i>
+            <i class="fa-regular">link</i>
+        </div>
+        </div>
+    </section>
+    <!-- ejercicio formularios -->
+    <h2>FORMULARIOS</h2>
+     <div class="mainContainerForm">
+        <form action="" class="mainForm">
+            <div class="containerForm">
+                <div class="inputClass">
+                    <p>First Name</p>
+                    <input type="text" placeholder="Your Name...">
+                </div>
+                <div class="inputClass">
+                    <p>Second Name</p>
+                    <input type="text" placeholder="Your Last Name...">
+                </div>
+                <div class="inputClass">
+                    <p>Country</p>
+                    <select>
+                        <option value="australia">Australia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="españa">España</option>
+                        <option value="usa">USA</option>
+                      </select>
+                </div>
+            </div>
+        </form>
+     </div>
+</body>
+</html>

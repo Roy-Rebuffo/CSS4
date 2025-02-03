@@ -33,7 +33,7 @@
         align-items: center;
     }
     .containerFonts{
-        max-width: 60%;
+        max-width: 1000px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -72,6 +72,37 @@
         border-radius: 5px;
         border: 1px solid rgb(128, 128, 128);
         width: 100%;
+    }
+    /* ejercicio formulario */
+    .ejFormulario{
+        width: 100%;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ejFormulario table{
+        background-color: blue;
+        border-radius: 10px;
+    }
+    tr td{
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    tr td textarea{
+        margin: 0 5px;
+    }
+    tr td input{
+        border-radius: 5px;
+        padding: 5px;
+        width: 80%;
+    }
+    tr td input[type=reset]{
+        background-color: black;
+        color: white;
+        width: 270%;
+        margin-left: 6px;
+        padding: 10px;
     }
 </style>
 <body>
@@ -144,5 +175,39 @@
             </div>
         </form>
      </div>
+     <!-- ejercicio formulario final -->
+     <section>
+        <form action="" class="ejFormulario">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <td><input type="text" placeholder="Escribe tu nombre"></td>
+                </tr>
+                <tr>
+                    <th>Apellidos</th>
+                    <td><input type="text" placeholder="1er Apellido"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="text" placeholder="email"></td>
+                </tr>
+                <tr>
+                    <th>Asunto</th>
+                    <td><input type="text" placeholder="Titular de la consulta"></td>
+                </tr>
+                <tr>
+                    <th>Mensaje</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="textarea" rows="10" cols="50" placeholder="Describe brevemente en menos de 300 caracteres"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="enviar datos"></td>
+                </tr>
+            </table>
+        </form>
+     </section>
 </body>
 </html>
